@@ -1,0 +1,363 @@
+db.createUser({
+    name: "harsh",
+    pwd: "18CS-14",
+    roles: ["readWrite", "dbAdmin"]
+});
+
+db.createCollection('countries');
+
+/* 
+db.countries.insert({
+    countryId: ,
+    name: "",
+    groundForces: {
+        activePersonnel: ,
+        reservePersonnel: ,
+        tanks: ,
+        armoredVehicles: ,
+        selfPropelledArtillery: ,
+        towedArtillery: ,
+        rocketProjectors: 
+    },
+    navalForces: {
+        aircraftCarriers: ,
+        destroyers: ,
+        frigates: ,
+        corvettes: ,
+        submarines: ,
+        patrol: ,
+        mineWarfare: 
+    },
+    airForces: {
+        fighters: ,
+        dedicatedAttack: ,
+        transports: ,
+        trainers: ,
+        specialMission: ,
+        Helicopters: ,
+        attackHelicopters: 
+    },
+    lastUpdated: new Date(),
+}); 
+*/
+
+db.countries.insert({
+    countryId: 0,
+    name: "USA",
+    groundForces: {
+        activePersonnel: 1400000,
+        reservePersonnel: 860000,
+        tanks: 6289,
+        armoredVehicles: 39253,
+        selfPropelledArtillery: 1465,
+        towedArtillery: 2740,
+        rocketProjectors: 1366
+    },
+    navalForces: {
+        aircraftCarriers: 20,
+        destroyers: 91,
+        frigates: 0,
+        corvettes: 19,
+        submarines: 66,
+        patrol: 13,
+        mineWarfare: 11
+    },
+    airForces: {
+        fighters: 2085,
+        dedicatedAttack: 715,
+        transports: 945,
+        trainers: 2643,
+        specialMission: 742,
+        Helicopters: 5768,
+        attackHelicopters: 967
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 1,
+    name: "Russia",
+    groundForces: {
+        activePersonnel: 1013628,
+        reservePersonnel: 2000000,
+        tanks: 12950,
+        armoredVehicles: 27038,
+        selfPropelledArtillery: 6083,
+        towedArtillery: 4465,
+        rocketProjectors: 3860
+    },
+    navalForces: {
+        aircraftCarriers: 1,
+        destroyers: 16,
+        frigates: 10,
+        corvettes: 79,
+        submarines: 62,
+        patrol: 41,
+        mineWarfare: 48
+    },
+    airForces: {
+        fighters: 873,
+        dedicatedAttack: 742,
+        transports: 424,
+        trainers: 497,
+        specialMission: 127,
+        Helicopters: 1522,
+        attackHelicopters: 531
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 2,
+    name: "China",
+    groundForces: {
+        activePersonnel: 2183000,
+        reservePersonnel: 510000,
+        tanks: 3500,
+        armoredVehicles: 33000,
+        selfPropelledArtillery: 3800,
+        towedArtillery: 3600,
+        rocketProjectors: 2650
+    },
+    navalForces: {
+        aircraftCarriers: 2,
+        destroyers: 36,
+        frigates: 52,
+        corvettes: 50,
+        submarines: 74,
+        patrol: 220,
+        mineWarfare: 29
+    },
+    airForces: {
+        fighters: 1232,
+        dedicatedAttack: 371,
+        transports: 224,
+        trainers: 314,
+        specialMission: 111,
+        Helicopters: 911,
+        attackHelicopters: 281
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 3,
+    name: "India",
+    groundForces: {
+        activePersonnel: 1444000,
+        reservePersonnel: 2100000,
+        tanks: 4292,
+        armoredVehicles: 8686,
+        selfPropelledArtillery: 235,
+        towedArtillery: 4060,
+        rocketProjectors: 266
+    },
+    navalForces: {
+        aircraftCarriers: 1,
+        destroyers: 10,
+        frigates: 13,
+        corvettes: 19,
+        submarines: 16,
+        patrol: 139,
+        mineWarfare: 3
+    },
+    airForces: {
+        fighters: 538,
+        dedicatedAttack: 172,
+        transports: 250,
+        trainers: 359,
+        specialMission: 77,
+        Helicopters: 722,
+        attackHelicopters: 23
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 4,
+    name: "Japan",
+    groundForces: {
+        activePersonnel: 247160,
+        reservePersonnel: 56000,
+        tanks: 1004,
+        armoredVehicles: 3130,
+        selfPropelledArtillery: 238,
+        towedArtillery: 500,
+        rocketProjectors: 99
+    },
+    navalForces: {
+        aircraftCarriers: 4,
+        destroyers: 40,
+        frigates: 0,
+        corvettes: 6,
+        submarines: 20,
+        patrol: 6,
+        mineWarfare: 25
+    },
+    airForces: {
+        fighters: 279,
+        dedicatedAttack: 12,
+        transports: 60,
+        trainers: 427,
+        specialMission: 152,
+        Helicopters: 637,
+        attackHelicopters: 119
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 5,
+    name: "South Korea",
+    groundForces: {
+        activePersonnel: 580000,
+        reservePersonnel: 3100000,
+        tanks: 2614,
+        armoredVehicles: 14000,
+        selfPropelledArtillery: 3040,
+        towedArtillery: 3854,
+        rocketProjectors: 575
+    },
+    navalForces: {
+        aircraftCarriers: 2,
+        destroyers: 12,
+        frigates: 18,
+        corvettes: 12,
+        submarines: 22,
+        patrol: 111,
+        mineWarfare: 11
+    },
+    airForces: {
+        fighters: 414,
+        dedicatedAttack: 71,
+        transports: 41,
+        trainers: 298,
+        specialMission: 30,
+        Helicopters: 803,
+        attackHelicopters: 112
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 6,
+    name: "France",
+    groundForces: {
+        activePersonnel: 268000,
+        reservePersonnel: 183635,
+        tanks: 528,
+        armoredVehicles: 6028,
+        selfPropelledArtillery: 109,
+        towedArtillery: 12,
+        rocketProjectors: 13
+    },
+    navalForces: {
+        aircraftCarriers: 4,
+        destroyers: 11,
+        frigates: 11,
+        corvettes: 0,
+        submarines: 9,
+        patrol: 17,
+        mineWarfare: 17
+    },
+    airForces: {
+        fighters: 269,
+        dedicatedAttack: 0,
+        transports: 121,
+        trainers: 187,
+        specialMission: 45,
+        Helicopters: 589,
+        attackHelicopters: 62
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 7,
+    name: "United Kingdom",
+    groundForces: {
+        activePersonnel: 192660,
+        reservePersonnel: 83000,
+        tanks: 227,
+        armoredVehicles: 5000,
+        selfPropelledArtillery: 89,
+        towedArtillery: 126,
+        rocketProjectors: 35
+    },
+    navalForces: {
+        aircraftCarriers: 2,
+        destroyers: 6,
+        frigates: 13,
+        corvettes: 0,
+        submarines: 10,
+        patrol: 22,
+        mineWarfare: 13
+    },
+    airForces: {
+        fighters: 133,
+        dedicatedAttack: 15,
+        transports: 44,
+        trainers: 241,
+        specialMission: 28,
+        Helicopters: 312,
+        attackHelicopters: 49
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 8,
+    name: "Egypt",
+    groundForces: {
+        activePersonnel: 440000,
+        reservePersonnel: 480000,
+        tanks: 4295,
+        armoredVehicles: 11700,
+        selfPropelledArtillery: 1139,
+        towedArtillery: 2189,
+        rocketProjectors: 1084
+    },
+    navalForces: {
+        aircraftCarriers: 2,
+        destroyers: 0,
+        frigates: 7,
+        corvettes: 7,
+        submarines: 8,
+        patrol: 45,
+        mineWarfare: 31
+    },
+    airForces: {
+        fighters: 215,
+        dedicatedAttack: 88,
+        transports: 59,
+        trainers: 387,
+        specialMission: 11,
+        Helicopters: 294,
+        attackHelicopters: 81
+    },
+    lastUpdated: new Date(),
+});
+db.countries.insert({
+    countryId: 9,
+    name: "Turkey",
+    groundForces: {
+        activePersonnel: 3334500,
+        reservePersonnel: 1340000,
+        tanks: 437,
+        armoredVehicles: 1820,
+        selfPropelledArtillery: 132,
+        towedArtillery: 565,
+        rocketProjectors: 84
+    },
+    navalForces: {
+        aircraftCarriers: 43,
+        destroyers: 78,
+        frigates: 126,
+        corvettes: 198,
+        submarines: 24,
+        patrol: 242,
+        mineWarfare: 12
+    },
+    airForces: {
+        fighters: 43,
+        dedicatedAttack: 78,
+        transports: 126,
+        trainers: 198,
+        specialMission: 24,
+        Helicopters: 242,
+        attackHelicopters: 12
+    },
+    lastUpdated: new Date(),
+});
